@@ -440,7 +440,7 @@ function centerGameDiv() {
 	var columnWidth = document.getElementById("main-column").offsetWidth;
 	var gameWidth = 300;
 	var padding = (columnWidth - gameWidth) / 2;
-	var toEval = 'document.getElementById("box-container").style.paddingLeft = "' + padding + 'px";';
+	var toEval = 'document.getElementById("main-column").style.paddingLeft = "' + padding + 'px";';
 	eval(toEval);
 }
 
