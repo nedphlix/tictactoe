@@ -150,14 +150,13 @@ function checkIfGameOver() {
 }
 
 function artificialIntelligence() {
-	var player, enemy, nextSqrIndex;
 	player = currentPlayer;
+	console.log(player);
 	if(player == "x") {
 		enemy = "o";
 	} else if(player == "o") {
 		enemy = "x";
 	}
-	console.log("computer is: " + player + " enemy is: " + enemy);
 
 	if(turns < 9 && isDraw === false) {
 		player = currentPlayer;
